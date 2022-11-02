@@ -14,8 +14,9 @@ ref:
   # Genome build
   build: GRCh38
 
+
 trimming:
-  activate: False
+  activate: True
 
 pca:
   activate: True
@@ -26,12 +27,12 @@ pca:
 diffexp:
   # contrasts for the deseq2 results method
   contrasts:
-    A-vs-B:
-      - A
-      - B
+    wild-vs-mutated:
+      - wild
+      - mutated
   model: ~condition
 
 params:
   cutadapt-pe: ""
   cutadapt-se: ""
-  star: "--outSAMtype BAM Unsorted"
+  star: ""
