@@ -9,10 +9,10 @@ This workflow performs a differential gene expression analysis with STAR and Des
 ## Personally modified version to apply for custom genomes 
 
 Tips:
-1 Fix some bugs and add some tips in the configs and workflows.
-2 Disable some steps, because custom genome may not have uniform Gene Symbol.
-3 The custom genome and annotation should be put in `resources/genemone.fasta` and `resources/genemone.gtf` in advance.
-4 If you can't get access to the wrappers from github like me, you can download the wappers(versions:0.77.0 and 0.75.0) and put them in the homedir and rewrite the wrappers in the workflows as `file://wrapper/0.77.0/bio/star/align`.
+1. Fix some bugs and add some tips in the configs and workflows.
+2. Disable some steps, because custom genome may not have uniform Gene Symbol.
+3. The custom genome and annotation should be put in `resources/genemone.fasta` and `resources/genemone.gtf` in advance.
+4. If you can't get access to the wrappers from github like me, you can download the wappers(versions:0.77.0 and 0.75.0) and put them in the homedir and rewrite the wrappers in the workflows as `file://wrapper/0.77.0/bio/star/align`.
 
 ## Usage
 
