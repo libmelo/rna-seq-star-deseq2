@@ -22,14 +22,8 @@ rule gene_2_symbol:
         counts="{prefix}.tsv",
     output:
         symbol="{prefix}.symbol.tsv",
-    params:
-        species=get_bioc_species_name(),
-    log:
-        "logs/gene2symbol/{prefix}.log",
-    conda:
-        "../envs/biomart.yaml"
-    script:
-        "../scripts/gene2symbol.R"
+    shell:
+        "cp {input} {output}"
 
 
 rule deseq2_init:

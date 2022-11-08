@@ -5,7 +5,8 @@ samples: config/samples.tsv
 # sample).
 units: config/units.tsv
 
-
+### ref config was disabled,but do not delete
+### just copy your custome genome and annotaion to: resources/genome.fasta and resources/genome.gtf
 ref:
   # Ensembl species name
   species: homo_sapiens
@@ -32,6 +33,8 @@ diffexp:
       - mutated
   model: ~condition
 
+# cutadapt params should be set if you'll trim the raw data (if not, it may cause errors in the following). Eg. "-q 20,20 --max-n 0.1 -m 75" 
+# star: "--outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --sjdbGTFfile" has been set, and hence cannot be set here again
 params:
   cutadapt-pe: ""
   cutadapt-se: ""
